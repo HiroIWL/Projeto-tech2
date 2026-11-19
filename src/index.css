@@ -434,8 +434,100 @@ body {
   font-family: var(--fonte-texto);
   font-size: clamp(1rem, 0.85rem + 0.6vw, 1.25rem);
   line-height: 1.5;
+  position: relative;
 }
 .terminal__corpo2 p {
   max-width: 880px;
   margin: 0 0 1.2em;
+}
+.terminal__leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* Contatos */
+.contato {
+  position: relative;
+  min-height: 100vh; 
+  width: 100%;
+  background-image: url("../src/assets/imgs/fundo-circuito.png"); 
+  background-size: cover;          
+  background-position: center top; 
+  background-repeat: no-repeat;   
+}
+.contato__topo {
+  position: relative;
+  padding: 40px clamp(20px, 5vw, 24px); 
+  text-align: left;
+}
+.contato__titulo {
+  margin: 0 0 8px;
+  font-family: var(--fonte-neon);
+  font-size: clamp(1.25rem, 1rem + 1.2vw, 1.5625rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--branco);
+  text-shadow: 3px 0 0 var(--rosa), 0 0 20px rgba(255, 42, 109, 0.6);
+}
+.contato__subtitulo {
+  margin: 0;                 
+  max-width: 800px;
+  text-align: left;
+  font-family: var(--fonte-neon);
+  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.25rem);
+  letter-spacing: 0.1em;
+}
+.contato__icone {
+  position: absolute;
+  top: 17px;
+  right: 68px;
+  width: 128px;
+  height: 128px;
+  display: block;
+  margin: 0;
+}
+.contato__lista {
+  width: 100%;          
+  margin: 0 auto;
+  padding: 40px clamp(20px, 5vw, 24px);   
+  text-align: left;
+  font-family: var(--fonte-texto);
+  font-size: clamp(1rem, 0.85rem + 0.6vw, 1.25rem);
+  line-height: 1.5;
+  text-shadow: 2px 0 0 var(--ciano), 0 0 20px rgba(0, 240, 255, 0.6);
+}
+.contato__descricao {
+  margin: 0 0 8px;
+  font-family: var(--fonte-neon);
+  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.25rem);
+  letter-spacing: 0.1em;
+  text-shadow: 2px 0 0 var(--ciano), 0 0 20px rgba(0, 240, 255, 0.6);
+}
+.contato__secao {
+  position: relative;
+  padding: 48px 16px 40px;
+  text-align: left;
+}
+.contato__titulo-secundario{
+  margin: 0 0 8px;
+  font-family: var(--fonte-neon);
+  font-size: clamp(1.25rem, 1rem + 1.2vw, 1.5625rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--branco);
+  text-shadow: 2px 0 0 var(--rosa), 0 0 20px rgba(255, 42, 109, 0.6);
+}
+.contato__subtitulo-secundario {
+  margin: 0;                 
+  max-width: 800px;
+  text-align: left;
+  font-family: var(--fonte-neon);
+  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.25rem);
+  letter-spacing: 0.1em;
 }
